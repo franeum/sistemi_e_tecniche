@@ -1,3 +1,5 @@
 # sistemi_e_tecniche
 
-- Presentazione
+```
+jupyter nbconvert name.ipynb --to slides --post serve
+```
