@@ -22,6 +22,10 @@
 
 [https://github.com/agraef/purr-data/releases](https://github.com/agraef/purr-data/releases)
 
+### Arduino
+
+[https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
+
 ```
 jupyter nbconvert name.ipynb --to slides --post serve
 ```
