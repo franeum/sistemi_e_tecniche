@@ -27,5 +27,5 @@
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
 ```
-jupyter nbconvert name.ipynb --to slides --post serve
+jupyter nbconvert name.ipynb --to slides
 ```
