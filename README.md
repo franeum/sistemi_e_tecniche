@@ -1,22 +1,24 @@
 # Sistemi, tecnologie, applicazioni e linguaggi di programmazione per la multimedialità
 
-## Chromium
+## Download e installazione del software
+
+### Chromium
 
 [https://download-chromium.appspot.com/](https://download-chromium.appspot.com/)
 
-## Anaconda
+### Anaconda
 
 [https://www.anaconda.com/distribution/](https://www.anaconda.com/distribution/)
 
-## MuseScore
+### MuseScore
 
 [https://musescore.org/it/download](https://musescore.org/it/download)
 
-## Reaper
+### Reaper
 
 [https://www.reaper.fm/download.php](https://www.reaper.fm/download.php)
 
-## Purr Data
+### Purr Data
 
 [https://github.com/agraef/purr-data/releases](https://github.com/agraef/purr-data/releases)
 
