@@ -4,7 +4,7 @@
 
 Aprire il programma *Anaconda Navigator* con la seguente icona:
 
-<img src="/immagini/01_navigator.png" width="200">
+<img src="/immagini/01_navigator.png" width="200" style="align:center">
 
 Una volta all'interno, aprire il programma *Jupyter*, premendo il pulsante ***Launch*** sotto la rispettiva icona:
 
