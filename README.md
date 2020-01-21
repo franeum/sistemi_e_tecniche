@@ -2,15 +2,16 @@
 
 ## Per chi ha problemi ad installare Anaconda:
 
-Per chi ha avuto problemi ad installare Anaconda l'invito è di provare ad installare miniconda da [qui](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
+Per chi ha avuto problemi ad installare Anaconda l'invito è di provare ad installare **Miniconda** dopo averlo scaricato da [qui](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
 
-Se l'installazione va a buon fine bisogna installare jupyter manualmente in questo modo:
+Se l'installazione va a buon fine è necessario installare **jupyter** manualmente in questo modo:
 
-- andare su *Start*, scrivere anaconda ed eseguire Anaconda Prompt
+- andare su *Start*, scrivere anaconda ed eseguire il programma **Anaconda Prompt**
 - sul terminale che compare digitare il seguente comando:  
   ```conda install jupyter```
 - se tutto funziona si può eseguire, sempre dal terminale, il seguente comando:  
   ```jupyter notebook```
+  che dovrebbe avviare Jupyter
 
 N.B. Se ci sono dei problemi cerchiamo di risolverli alla prossima lezione.
 
