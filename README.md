@@ -8,7 +8,7 @@ Aprire il programma *Anaconda Navigator* con la seguente icona:
 
 Una volta all'interno, aprire il programma *Jupyter*, premendo il pulsante ***Launch*** sotto la rispettiva icona:
 
-![](/immagini/02_jupyter.png=250x)
+![](/immagini/02_jupyter.png=150x)
 
 Nella nuova finestra cercare e aprire con un click la cartella **Documents** e successivamente cercare e aprire la cartella **sistemi_slides**. A questo punto dovreste trovarvi all'interno della cartella suddetta, che contiene il file **slides_01.ipynb**, come in figura:
 
