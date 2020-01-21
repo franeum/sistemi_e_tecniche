@@ -18,11 +18,33 @@ A questo punto aprite il file e vi troverete nell'ambiente per scrivere le slide
 
 ![](/immagini/04_ambiente_jupyter.png)
 
-Qui trovate le *celle*, cioè gli spazi che conterranno le slides. Una cella può trovarsi in uno dei seguenti stati:
-- *edit mode* (varde)
-- *command mode* (blu)
+Attivate la modalità **slideshow** dal menu View/Cell Toolbar/Slideshow:
 
-Per scrivere all'interno di una slide è necessario che questa sia in *edit mode* (Verde), che si attiva con un doppio click del mouse all'interno della cella stessa. Una volta che la cella è stata riempita di testo, si più mettere in *command mode* (Blu)
+![](/immagini/08_slideshow.png)
+
+Qui trovate le *celle*, cioè gli spazi che conterranno le slides. Una cella può trovarsi in uno dei seguenti stati:
+- *edit mode* (varde) che si attiva col tasto **INVIO**
+- *command mode* (blu) che si attiva col tasto **ESC**
+
+Per poter scrivere all'interno delle celle usando il linguaggio **markdown** è necessario che la cella sia abilitata alla scrittura in markdown, scegliendo la voce omonima dal menu a tendina come in foto:
+
+![](/immagini/05_markdown.png)
+
+N.B. si può abilitare il markdown sulla cella anche con il tasto **m** quando la cella è in *command mode*
+
+Scrivete un testo all'interno di una cella (in *edit mode*), magari preceduto da un segno #:
+
+![](/immagini/06_testo.png)
+
+poi **eseguite** la cella premendo **CTRL**+**INVIO**, vedrete la cella con il comando markdown *eseguito*:
+
+![](/immagini/07_testo_exec.png)
+
+Premete **b** per creare una nuova cella e scrivete nuovo testo ed eseguite, e così via...
+
+Infine create il file Html attraverso tramite il menu **File/Download as/Reveal.js slides**
+
+![](/immagini/09_export_html.png)
 
 
 
