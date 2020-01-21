@@ -1,5 +1,19 @@
 # Sistemi, tecnologie, applicazioni e linguaggi di programmazione per la multimedialità
 
+## Per chi ha problemi ad installare Anaconda:
+
+Per chi ha avuto problemi ad installare Anaconda l'invito è di provare ad installare miniconda da [qui](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe)
+
+Se l'installazione va a buon fine bisogna installare jupyter manualmente in questo modo:
+
+- andare su *Start*, scrivere anaconda ed eseguire Anaconda Prompt
+- sul terminale che compare digitare il seguente comando:  
+  ```conda install jupyter```
+- se tutto funziona si può eseguire, sempre dal terminale, il seguente comando:  
+  ```jupyter notebook```
+
+N.B. Se ci sono dei problemi cerchiamo di risolverli alla prossima lezione.
+
 ## Jupyter (Anaconda):
 
 Aprire il programma *Anaconda Navigator* con la seguente icona:
@@ -47,7 +61,7 @@ Per poter scrivere all'interno delle celle usando il linguaggio **markdown** è 
 
 N.B. si può abilitare il markdown sulla cella anche con il tasto **m** quando la cella è in *command mode*
 
-Scrivete un testo all'interno di una cella (in *edit mode*), magari preceduto da un segno #:
+Scrivete un testo all'interno di una cella (in *edit mode*), magari preceduto da un segno **#**:
 
 
 <img src="/immagini/06_testo.png" width="700">
