@@ -4,19 +4,19 @@
 
 Aprire il programma *Anaconda Navigator* con la seguente icona:
 
-[](01_navigator.png)
+[](immagini/01_navigator.png)
 
 Una volta all'interno, aprire il programma *Jupyter*, premendo il pulsante ***Launch*** sotto la rispettiva icona:
 
-[](02_jupyter.png)
+[](immagini/02_jupyter.png)
 
 Nella nuova finestra cercare e aprire con un click la cartella **Documents** e successivamente cercare e aprire la cartella **sistemi_slides**. A questo punto Dovreste trovarvi all'interno della cartella suddetta, che contiene il file **slides_01.ipynb**, come in figura:
 
-[](03_file_ipynb.png)
+[](immagini/03_file_ipynb.png)
 
 A questo punto aprite il file e vi troverete nell'ambiente per scrivere le slides.
 
-[](04_ambiente_jupyter.png)
+[](immagini/04_ambiente_jupyter.png)
 
 Qui trovate le *celle*, cioè gli spazi che conterranno le slides. Una cella può trovarsi in uno dei seguenti stati:
 - *edit mode* (varde)
