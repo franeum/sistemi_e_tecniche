@@ -1,6 +1,6 @@
 # Sistemi, tecnologie, applicazioni e linguaggi di programmazione per la multimedialità
 
-## Apertura di Anaconda:
+## Jupyter (Anaconda):
 
 Aprire il programma *Anaconda Navigator* con la seguente icona:
 
