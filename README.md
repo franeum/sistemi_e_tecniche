@@ -8,21 +8,25 @@ Aprire il programma *Anaconda Navigator* con la seguente icona:
 
 Una volta all'interno, aprire il programma *Jupyter*, premendo il pulsante ***Launch*** sotto la rispettiva icona:
 
-![](/immagini/02_jupyter.png)
+![](/immagini/02_jupyter.png=250x)
 
-Nella nuova finestra cercare e aprire con un click la cartella **Documents** e successivamente cercare e aprire la cartella **sistemi_slides**. A questo punto Dovreste trovarvi all'interno della cartella suddetta, che contiene il file **slides_01.ipynb**, come in figura:
+Nella nuova finestra cercare e aprire con un click la cartella **Documents** e successivamente cercare e aprire la cartella **sistemi_slides**. A questo punto dovreste trovarvi all'interno della cartella suddetta, che contiene il file **slides_01.ipynb**, come in figura:
 
 ![](/immagini/03_file_ipynb.png)
 
-A questo punto aprite il file e vi troverete nell'ambiente per scrivere le slides.
+Aprite il file e vi troverete nell'ambiente per scrivere le slides.
 
 ![](/immagini/04_ambiente_jupyter.png)
 
-Attivate la modalità **slideshow** dal menu View/Cell Toolbar/Slideshow:
+Attivate la modalità **slideshow** dal menu **View/Cell Toolbar/Slideshow**:
 
 ![](/immagini/08_slideshow.png)
 
-Qui trovate le *celle*, cioè gli spazi che conterranno le slides. Una cella può trovarsi in uno dei seguenti stati:
+La modalità **slideshow** vi consente di scegliere il tipo di slide da generare, tramite il menu a tendina sulla destra:
+
+![](/immagini/10_slides.png)
+
+Le *celle*, cioè gli spazi che conterranno le slides, sono gli elementi fondamentali dell'ambiente jupyter. Una cella può trovarsi in uno dei seguenti stati:
 - *edit mode* (varde) che si attiva col tasto **INVIO**
 - *command mode* (blu) che si attiva col tasto **ESC**
 
