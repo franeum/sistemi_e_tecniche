@@ -14,3 +14,11 @@
 12. 21-03-2020  **da definire**
 
 Ogni lezione avrà il seguente orario: **14,30 - 17**
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
