@@ -8,8 +8,6 @@
     * **Aula 40**
 1.  *14-02-2020*
     * **San Giuseppe - aula 67 III piano**
-1.  *15-02-2020*
-    * **Aula 40**
 1.  *21-02-2020*
     * **San Giuseppe - aula 67 III piano**
 1.  *28-02-2020*
@@ -23,6 +21,8 @@
 1.  *20-03-2020*
     * **Aula 40**
 1.  *21-03-2020*
-    * **da definire**  
+    * **da definire** 
+1.  *27-03-2020*
+    * **da definire** 
 
 Ogni lezione avrà il seguente orario: **14,30 - 17**
