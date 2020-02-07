@@ -1,8 +1,8 @@
 # Calendario lezioni di sistemi e tecniche
 
-1. 17-01-2020  Aula 40
-2. 31-01-2020  Aula 40
-3. 07-02-2020  Aula 40
+1. a 17-01-2020  Aula 40
+2. a 31-01-2020  Aula 40
+3. a 07-02-2020  Aula 40
 4. 14-02-2020  San Giuseppe - aula 67 III piano
 5. 15-02-2020  Aula 40
 6. 21-02-2020  San Giuseppe - aula 67 III piano
