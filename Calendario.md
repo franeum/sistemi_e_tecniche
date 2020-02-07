@@ -1,4 +1,4 @@
-# Calendario lezioni di sistemi e tecniche
+# Calendario lezioni di *Sistemi, tecnologie, applicazioni e linguaggi di programmazione per la multimedialità*
 
 1.  *17-01-2020*  - Aula 40
 1.  *31-01-2020*  - Aula 40
