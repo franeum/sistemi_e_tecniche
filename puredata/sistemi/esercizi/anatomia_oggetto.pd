@@ -1,0 +1,16 @@
+#N canvas 0 23 1043 832.094 10;
+#X text 155 16 anatomia di un oggetto;
+#X text 239 121 <-- forma rettangolare;
+#X obj 199 121 +;
+#X obj 198 230 + 15;
+#X text 120 86 hanno un nome "atomico" \, cioè formato da un solo
+simbolo o una sola parola;
+#X text 118 193 possono avere argomenti \, detti "creation arguments"
+\, che definiscono lo stato iniziale dell'oggetto;
+#X text 117 258 il numero 15 è un argomento \, e dice che ogni numero
+in entrata verrà sommato a 15;
+#X obj 196 373 + 15;
+#X msg 225 342 20;
+#X text 234 366 inviando un nuovo numero all'inlet destro posso cambiare
+il secondo addendo;
+#X connect 8 0 7 1;
