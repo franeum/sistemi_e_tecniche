@@ -1,0 +1,9 @@
+#N canvas 0 23 928 832.188 10;
+#X text 21 19 esercizio 1;
+#X text 21 39 cosa restituisce questa operazione?;
+#X msg 127 102 8;
+#X obj 127 147 + 7;
+#X obj 127 192 print;
+#X text 21 239 quanti e quali tipi di box contiene?;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
