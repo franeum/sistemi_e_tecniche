@@ -73,12 +73,12 @@ theme: "white"
 ---
 
 # LE GOCCE CADRANNO SU UNA SUPERFICIE COLLEGATA A UN `MICROFONO A CONTATTO`
-<img src=\acqua01/04_piezo.jpg width=300 height=400 /> {: .fragment}
+<img src=acqua01/04_piezo.jpg width=300 height=400 /> {: .fragment}
 
 ---
 
 # CHE ATTRAVERSO UNA SCHEDA `ARDUINO` INVIERA' UN SEGNALE AL COMPUTER
-<img src=\acqua01/05_wemos.jpg width=350 height=400 /> {: .fragment}
+<img src=acqua01/05_wemos.jpg width=350 height=400 /> {: .fragment}
 
 ---
 
@@ -86,7 +86,7 @@ theme: "white"
 
 --
 
-<img src=\acqua01/07_tutto_b.png />
+<img src=acqua01/07_tutto_b.png />
 
 ---
 
