@@ -110,6 +110,7 @@ theme: "white"
 
 # Suoni
 1. Che suoni? (suoni d'acqua, sintesi per modelli fisici, etc...) {: .fragment}
+1. Registrazione strumenti che `mimano` l'acqua {: .fragment}
 2. Costruzione della *patch* con **puredata** {: .fragment}
 
 ---
