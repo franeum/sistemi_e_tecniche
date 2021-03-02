@@ -1,0 +1,45 @@
+#N canvas 115 38 1199 933 12;
+#X obj 400 20 bng 30 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 100 200 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 100 230 openpanel;
+#X obj 100 300 soundfiler;
+#X floatatom 100 329 10 0 0 0 - - -, f 10;
+#X obj 100 700 array define words 100;
+#X msg 100 260 read -resize \$1 words;
+#X obj 850 140 v total_duration;
+#X obj 850 100 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 850 169 14 0 0 0 - - -, f 14;
+#X floatatom 850 226 14 0 0 0 - - -, f 14;
+#X obj 850 197 expr $f1 / 44100;
+#X obj 400 609 dac~;
+#X obj 400 500 bng 30 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 300 20 loadbang;
+#X obj 300 129 samplerate~;
+#X obj 300 158 v sr;
+#X floatatom 100 480 14 0 0 0 - - -, f 14;
+#X obj 400 560 _overlap_word~ words 2;
+#X obj 100 380 expr int($f1 / sr) / word_duration;
+#X obj 400 160 v word_duration;
+#X obj 400 130 f 2;
+#X connect 0 0 15 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 3 0 4 0;
+#X connect 4 0 19 0;
+#X connect 6 0 3 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 9 0 11 0;
+#X connect 11 0 10 0;
+#X connect 13 0 18 0;
+#X connect 14 0 15 0;
+#X connect 14 0 21 0;
+#X connect 15 0 16 0;
+#X connect 18 0 12 0;
+#X connect 18 0 12 1;
+#X connect 19 0 17 0;
+#X connect 21 0 20 0;
