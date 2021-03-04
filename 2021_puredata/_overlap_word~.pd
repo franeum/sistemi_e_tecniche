@@ -1,4 +1,4 @@
-#N canvas 0 24 1920 1001 12;
+#N canvas 201 79 1358 830 12;
 #X obj 200 250 route 0 1 2 3 4 5 6 7, f 46;
 #X obj 200 200 pack 0 0;
 #X obj 200 80 t b b;
