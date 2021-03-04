@@ -1,0 +1,6 @@
+#N canvas 0 37 1187 834 12;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array words 705616 float 0 black black;
+#X coords 0 1 705615 -1 800 140 1;
+#X restore 320 10 graph;
+#X obj 10 10 _choose_file words;
