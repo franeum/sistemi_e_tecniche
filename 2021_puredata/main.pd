@@ -1,16 +1,41 @@
-#N canvas 368 61 1199 958 12;
+#N canvas 721 98 1199 958 12;
 #X obj 100 200 bng 50 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 600 749 dac~;
 #X obj 600 200 bng 100 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X floatatom 220 760 14 0 0 0 - - -, f 14;
-#X obj 600 700 _overlap_word~ words 2;
-#X obj 247 363 _choose_words words 2;
+#X floatatom 100 330 14 0 0 0 - - -, f 14;
+#X obj 100 300 _choose_words words 2;
 #X obj 298 200 array define words;
-#X connect 0 0 5 0;
-#X connect 2 0 4 0;
-#X connect 3 0 4 1;
-#X connect 4 0 1 0;
-#X connect 4 0 1 1;
-#X connect 5 0 3 0;
+#X obj 600 700 _overlap~ words 2;
+#X obj 360 300 netreceive -b -u 8000;
+#X obj 360 329 fudiparse;
+#X obj 360 358 print parsed;
+#X obj 200 600 netsend 1;
+#X msg 200 540 connect localhost 8001;
+#X msg 300 667 send foo \$1;
+#X floatatom 300 640 0 0 0 0 - - -;
+#X obj 400 600 metro 100;
+#X obj 400 629 random 100;
+#X obj 400 560 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X floatatom 460 500 5 0 0 0 - - -, f 5;
+#X msg 200 780 send file;
+#X msg 120 480 send file ./Documenti/sistemi_e_tecniche/2021_puredata
+;
+#X connect 0 0 4 0;
+#X connect 2 0 6 0;
+#X connect 3 0 6 1;
+#X connect 4 0 3 0;
+#X connect 6 0 1 0;
+#X connect 6 0 1 1;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 10 0;
+#X connect 13 0 12 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 14 0;
+#X connect 17 0 14 1;
+#X connect 19 0 10 0;
