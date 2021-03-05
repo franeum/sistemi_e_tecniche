@@ -6,10 +6,12 @@ import time
 import random
 import re
 
-PDPATH = "/Applications/Pd-l2ork.app/Contents/MacOS/nwjs main.pd &"
+#PDPATH = "/Applications/Pd-l2ork.app/Contents/MacOS/nwjs main.pd &"
+PDPATH = "pd main.pd &"
 PATTERN1 = re.compile(r'file (.+);')
 UDP_IP = "127.0.0.1"
-UDP_PORT = 8001
+UDP_SEND_PORT = 8000
+UDP_RCV_PORT = 8001
 
 if __name__ == "__main__":
     os.system(PDPATH)
@@ -23,17 +25,19 @@ if __name__ == "__main__":
 
     # sock.close()
 
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # UDP
-    sock.bind((UDP_IP, UDP_PORT))
+    sock_srv = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # UDP
+    sock_srv.bind((UDP_IP, UDP_RCV_PORT))
 
     while True:
         try:
-            data, addr = sock.recvfrom(1024)
+            data, addr = sock_srv.recvfrom(1024)
             data = data.decode("utf-8")
             print(data)
+            print(addr)
             res = re.match(PATTERN1, data)
             if res:
                 print(f"received message: {res.group(1)}")
+                sock_srv.sendto(b'received', ("127.0.0.1",8000))
         except KeyboardInterrupt:
-            sock.close()
+            sock_srv.close()
             exit()
