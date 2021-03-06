@@ -1,6 +1,6 @@
-#N canvas 0 37 1920 1018 12;
-#X obj 100 200 bng 50 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
+#N canvas 1142 60 774 958 12;
+#X obj 100 200 bng 50 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X obj 600 749 dac~;
 #X obj 600 200 bng 100 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
@@ -14,15 +14,22 @@
 #X floatatom 300 640 0 0 0 0 - - -;
 #X obj 400 600 metro 100;
 #X obj 400 629 random 100;
-#X obj 400 560 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000 0 1;
-#X floatatom 460 500 5 0 0 0 - - -, f 5;
-#X msg 120 480 send file ./Documenti/sistemi_e_tecniche/2021_puredata
-;
+#X obj 400 560 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 460 566 5 0 0 0 - - -;
+#X msg 200 780 send file;
 #X obj 187 679 print back;
 #X obj 200 600 netsend -u;
 #X msg 200 540 connect localhost 8001;
-#X obj 368 284 netreceive -b -u 8000;
+#X obj 360 292 netreceive -b -u 8000;
+#X msg 137 441 send samplerate 44100;
+#X msg 120 480 send filename ./Documenti/sistemi_e_tecniche/2021_puredata
+;
+#X msg 183 22 symbol ./Documenti/sistemi_e_tecniche/2021_puredata;
+#X obj 183 62 openpanel;
+#X obj 182 182 print filename;
+#X obj 183 106 list prepend send filename;
+#X obj 183 131 list trim;
 #X connect 0 0 4 0;
 #X connect 2 0 6 0;
 #X connect 3 0 6 1;
@@ -36,8 +43,14 @@
 #X connect 12 0 10 0;
 #X connect 13 0 11 0;
 #X connect 14 0 11 1;
-#X connect 15 0 17 0;
 #X connect 17 0 16 0;
 #X connect 17 1 16 0;
 #X connect 18 0 17 0;
 #X connect 19 0 7 0;
+#X connect 20 0 17 0;
+#X connect 21 0 17 0;
+#X connect 22 0 23 0;
+#X connect 23 0 25 0;
+#X connect 25 0 26 0;
+#X connect 26 0 24 0;
+#X connect 26 0 17 0;
