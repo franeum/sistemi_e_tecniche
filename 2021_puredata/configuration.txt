@@ -1,0 +1,2 @@
+words samples/words.wav 2;
+phrases samples/phrases.wav 7;
