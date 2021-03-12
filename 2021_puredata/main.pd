@@ -1,8 +1,8 @@
-#N canvas 127 86 774 958 12;
-#X obj 600 749 dac~;
-#X obj 600 200 bng 100 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
-#X obj 600 700 _overlap~ words 2;
+#N canvas 1013 62 907 958 12;
+#X obj 433 806 dac~;
+#X obj 450 300 bng 100 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 433 757 _overlap~ words 2;
 #X obj 100 340 _openfile, f 19;
 #X msg 100 300 samples/words.wav 2 words;
 #X obj 100 379 v nr_of_words;
@@ -13,6 +13,29 @@
 #X obj 100 579 v nr_of_phrases;
 #X obj 230 580 v offset_phrases;
 #X obj 100 620 array define phrases;
+#X obj 604 806 dac~;
+#X obj 604 757 _overlap~ words 2;
+#X obj 769 807 dac~;
+#X obj 769 758 _overlap~ words 2;
+#X obj 613 300 bng 100 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 779 301 bng 100 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 453 195 metro 3100;
+#X obj 613 196 metro 2700;
+#X obj 779 197 metro 2950;
+#X obj 615 59 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 613 133 pipe 1000;
+#X obj 779 145 pipe 2000;
+#X obj 178 26 netreceive -u -b 8000;
+#X obj 178 51 oscparse;
+#X obj 178 76 list trim;
+#X obj 178 101 route trigger;
+#X obj 178 126 route 24 25 26 27 28 29;
+#X obj 178 178 t b;
+#X obj 227 182 t b;
+#X obj 317 186 t b;
 #X connect 1 0 2 0;
 #X connect 2 0 0 0;
 #X connect 2 0 0 1;
@@ -22,3 +45,27 @@
 #X connect 8 0 10 0;
 #X connect 8 1 11 0;
 #X connect 9 0 8 0;
+#X connect 14 0 13 0;
+#X connect 14 0 13 1;
+#X connect 16 0 15 0;
+#X connect 16 0 15 1;
+#X connect 17 0 14 0;
+#X connect 18 0 16 0;
+#X connect 19 0 1 0;
+#X connect 20 0 17 0;
+#X connect 21 0 18 0;
+#X connect 22 0 19 0;
+#X connect 22 0 23 0;
+#X connect 22 0 24 0;
+#X connect 23 0 20 0;
+#X connect 24 0 21 0;
+#X connect 25 0 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X connect 28 0 29 0;
+#X connect 29 1 31 0;
+#X connect 29 2 32 0;
+#X connect 29 3 30 0;
+#X connect 30 0 1 0;
+#X connect 31 0 17 0;
+#X connect 32 0 18 0;
