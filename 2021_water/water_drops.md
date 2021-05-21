@@ -1,6 +1,35 @@
 # WATER DROPS
 
-Installazione interattiva pensata per la giornata mondiale dell'acqua (30 marzo) in cui delle gocce d'acqua cadono su una superficie e vengono captate da un microfono a contatto che, tramite arduino, invia dei segnali di innesco al computer che esegue suoni ambientali *acquatici* e delle voci registrate che recitano parole che hanno attinenza con il tema dell'acqua.
+Installazione interattiva pensata per la giornata mondiale dell'acqua (30 marzo). 
+L'idea è quella di *captare* delle gocce d'acqua che si infrangono su una superficie innescando degli eventi audio e dei segnali luminosi.
+
+## Panoramica 
+
+La struttura di base (che chiamiamo *cascata*) è costituita da un deflussore sospeso su un'asta microfonica che genera delle gocce d'acqua con una frequenza di caduta regolabile. 
+
+Le gocce, contattando la superficie di caduta, mettono in azione le membrane di un microfono piezoelettrico che genera un segnale elettrico elaborato da una scheda arduino, al fine di gestire la luminosità di un diodo e di innescare degli eventi audio che risiedono su un computer: si tratta di voci registrate (per l'occasione), *field recordings* (oceani, fiumi, pioggia) e suoni di sintesi (*synthetic drops*).
+
+## Tecnologie
+
+Le aree tecnologiche coinvolte nella realizzazione del sistema sono state molteplici:
+- meccaniche:
+  - deflussore
+- acustiche:
+  - speaker
+  - mixer
+  - microfoni
+- digitali:
+  - computer
+    - software di registrazione/riproduzione audio
+    - software di gestione algoritmica di eventi audio
+  - physical computing
+    - arduino
+    - sensori piezoelettrici
+    - diodi luminosi
+    - comunicazione seriale
+
+
+## Realizzazione
 
 L'installazione è stata realizzata durante tutto il corso e ha previsto le seguenti fasi realizzative:
 
@@ -35,13 +64,13 @@ L'installazione è stata realizzata durante tutto il corso e ha previsto le segu
     - gestione dei suoni ambientali
     - spazializzazione del suono (in base alla posizione delle 3 postazioni)
 - Struttura fisica:
-  - Colonna di gocciolamento:
+  - Cascata di gocciolamento:
     - asta microfonica di sostegno
     - *deflussore* con regolazione della frequenza di gocciolamento
     - scatola trasparente di raccolta acqua
     - piastra di sostegno per i microfoni
   - Montaggio in aula 40 il giorno 15 Maggio 2021
-    - sono state realizzate 3 colonne di gocciolamento, ognuna con la sua arduino e il suo microfono a contatto
+    - sono state realizzate 3 cascate, ognuna con la sua arduino e il suo microfono a contatto
     - i microfoni a contatto sono stati (lungamente) tarati per captare le gocce e non i rumori interferenti
 - Ripresa Video
   - il giorno della realizzazione sono state fatte riprese video dell'installazione
